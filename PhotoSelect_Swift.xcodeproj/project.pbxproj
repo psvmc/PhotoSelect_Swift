@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FE35F0B1C5367D9004EFDF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F0A1C5367D9004EFDF0 /* AppDelegate.swift */; };
+		3FE35F0D1C5367D9004EFDF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F0C1C5367D9004EFDF0 /* ViewController.swift */; };
+		3FE35F101C5367D9004EFDF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35F0E1C5367D9004EFDF0 /* Main.storyboard */; };
+		3FE35F121C5367DA004EFDF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35F111C5367DA004EFDF0 /* Assets.xcassets */; };
+		3FE35F151C5367DA004EFDF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35F131C5367DA004EFDF0 /* LaunchScreen.storyboard */; };
+		3FE35F4C1C536903004EFDF0 /* DNAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F201C536903004EFDF0 /* DNAlbumTableViewController.m */; };
+		3FE35F4D1C536903004EFDF0 /* DNAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F221C536903004EFDF0 /* DNAsset.m */; };
+		3FE35F4E1C536903004EFDF0 /* DNImageFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F241C536903004EFDF0 /* DNImageFlowViewController.m */; };
+		3FE35F4F1C536903004EFDF0 /* DNImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F261C536903004EFDF0 /* DNImagePickerController.m */; };
+		3FE35F501C536903004EFDF0 /* DNImagePickerController.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35F271C536903004EFDF0 /* DNImagePickerController.strings */; };
+		3FE35F511C536903004EFDF0 /* DNPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F291C536903004EFDF0 /* DNPhotoBrowser.m */; };
+		3FE35F521C536903004EFDF0 /* DNImagePicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35F2A1C536903004EFDF0 /* DNImagePicker.strings */; };
+		3FE35F531C536903004EFDF0 /* NSURL+DNIMagePickerUrlEqual.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F2E1C536903004EFDF0 /* NSURL+DNIMagePickerUrlEqual.m */; };
+		3FE35F541C536903004EFDF0 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F301C536903004EFDF0 /* UIColor+Hex.m */; };
+		3FE35F551C536903004EFDF0 /* UIView+DNImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F321C536903004EFDF0 /* UIView+DNImagePicker.m */; };
+		3FE35F561C536903004EFDF0 /* UIViewController+DNImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F341C536903004EFDF0 /* UIViewController+DNImagePicker.m */; };
+		3FE35F571C536903004EFDF0 /* imageResources.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35F351C536903004EFDF0 /* imageResources.xcassets */; };
+		3FE35F581C536903004EFDF0 /* ImagesPicker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FE35F361C536903004EFDF0 /* ImagesPicker.xcassets */; };
+		3FE35F591C536903004EFDF0 /* DNAssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F391C536903004EFDF0 /* DNAssetsViewCell.m */; };
+		3FE35F5A1C536903004EFDF0 /* DNBadgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F3B1C536903004EFDF0 /* DNBadgeLabel.m */; };
+		3FE35F5B1C536903004EFDF0 /* DNBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F3D1C536903004EFDF0 /* DNBrowserCell.m */; };
+		3FE35F5C1C536903004EFDF0 /* DNFullImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F3F1C536903004EFDF0 /* DNFullImageButton.m */; };
+		3FE35F5D1C536903004EFDF0 /* DNSendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F411C536903004EFDF0 /* DNSendButton.m */; };
+		3FE35F5E1C536903004EFDF0 /* DNUnAuthorizedTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F431C536903004EFDF0 /* DNUnAuthorizedTipsView.m */; };
+		3FE35F5F1C536903004EFDF0 /* JKPromptView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F451C536903004EFDF0 /* JKPromptView.m */; };
+		3FE35F601C536903004EFDF0 /* MWTapDetectingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F471C536903004EFDF0 /* MWTapDetectingImageView.m */; };
+		3FE35F611C536903004EFDF0 /* ZJALAssetUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE35F4B1C536903004EFDF0 /* ZJALAssetUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3FE35F071C5367D9004EFDF0 /* PhotoSelect_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoSelect_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE35F0A1C5367D9004EFDF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3FE35F0C1C5367D9004EFDF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3FE35F0F1C5367D9004EFDF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3FE35F111C5367DA004EFDF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3FE35F141C5367DA004EFDF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3FE35F161C5367DA004EFDF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FE35F1C1C536903004EFDF0 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		3FE35F1F1C536903004EFDF0 /* DNAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAlbumTableViewController.h; sourceTree = "<group>"; };
+		3FE35F201C536903004EFDF0 /* DNAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAlbumTableViewController.m; sourceTree = "<group>"; };
+		3FE35F211C536903004EFDF0 /* DNAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAsset.h; sourceTree = "<group>"; };
+		3FE35F221C536903004EFDF0 /* DNAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAsset.m; sourceTree = "<group>"; };
+		3FE35F231C536903004EFDF0 /* DNImageFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNImageFlowViewController.h; sourceTree = "<group>"; };
+		3FE35F241C536903004EFDF0 /* DNImageFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNImageFlowViewController.m; sourceTree = "<group>"; };
+		3FE35F251C536903004EFDF0 /* DNImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNImagePickerController.h; sourceTree = "<group>"; };
+		3FE35F261C536903004EFDF0 /* DNImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNImagePickerController.m; sourceTree = "<group>"; };
+		3FE35F271C536903004EFDF0 /* DNImagePickerController.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = DNImagePickerController.strings; sourceTree = "<group>"; };
+		3FE35F281C536903004EFDF0 /* DNPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNPhotoBrowser.h; sourceTree = "<group>"; };
+		3FE35F291C536903004EFDF0 /* DNPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNPhotoBrowser.m; sourceTree = "<group>"; };
+		3FE35F2B1C536903004EFDF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DNImagePicker.strings; sourceTree = "<group>"; };
+		3FE35F2D1C536903004EFDF0 /* NSURL+DNIMagePickerUrlEqual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+DNIMagePickerUrlEqual.h"; sourceTree = "<group>"; };
+		3FE35F2E1C536903004EFDF0 /* NSURL+DNIMagePickerUrlEqual.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+DNIMagePickerUrlEqual.m"; sourceTree = "<group>"; };
+		3FE35F2F1C536903004EFDF0 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		3FE35F301C536903004EFDF0 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		3FE35F311C536903004EFDF0 /* UIView+DNImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DNImagePicker.h"; sourceTree = "<group>"; };
+		3FE35F321C536903004EFDF0 /* UIView+DNImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DNImagePicker.m"; sourceTree = "<group>"; };
+		3FE35F331C536903004EFDF0 /* UIViewController+DNImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DNImagePicker.h"; sourceTree = "<group>"; };
+		3FE35F341C536903004EFDF0 /* UIViewController+DNImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DNImagePicker.m"; sourceTree = "<group>"; };
+		3FE35F351C536903004EFDF0 /* imageResources.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = imageResources.xcassets; sourceTree = "<group>"; };
+		3FE35F361C536903004EFDF0 /* ImagesPicker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImagesPicker.xcassets; sourceTree = "<group>"; };
+		3FE35F381C536903004EFDF0 /* DNAssetsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNAssetsViewCell.h; sourceTree = "<group>"; };
+		3FE35F391C536903004EFDF0 /* DNAssetsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNAssetsViewCell.m; sourceTree = "<group>"; };
+		3FE35F3A1C536903004EFDF0 /* DNBadgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNBadgeLabel.h; sourceTree = "<group>"; };
+		3FE35F3B1C536903004EFDF0 /* DNBadgeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNBadgeLabel.m; sourceTree = "<group>"; };
+		3FE35F3C1C536903004EFDF0 /* DNBrowserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNBrowserCell.h; sourceTree = "<group>"; };
+		3FE35F3D1C536903004EFDF0 /* DNBrowserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNBrowserCell.m; sourceTree = "<group>"; };
+		3FE35F3E1C536903004EFDF0 /* DNFullImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNFullImageButton.h; sourceTree = "<group>"; };
+		3FE35F3F1C536903004EFDF0 /* DNFullImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNFullImageButton.m; sourceTree = "<group>"; };
+		3FE35F401C536903004EFDF0 /* DNSendButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNSendButton.h; sourceTree = "<group>"; };
+		3FE35F411C536903004EFDF0 /* DNSendButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNSendButton.m; sourceTree = "<group>"; };
+		3FE35F421C536903004EFDF0 /* DNUnAuthorizedTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNUnAuthorizedTipsView.h; sourceTree = "<group>"; };
+		3FE35F431C536903004EFDF0 /* DNUnAuthorizedTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNUnAuthorizedTipsView.m; sourceTree = "<group>"; };
+		3FE35F441C536903004EFDF0 /* JKPromptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKPromptView.h; sourceTree = "<group>"; };
+		3FE35F451C536903004EFDF0 /* JKPromptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKPromptView.m; sourceTree = "<group>"; };
+		3FE35F461C536903004EFDF0 /* MWTapDetectingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWTapDetectingImageView.h; sourceTree = "<group>"; };
+		3FE35F471C536903004EFDF0 /* MWTapDetectingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWTapDetectingImageView.m; sourceTree = "<group>"; };
+		3FE35F481C536903004EFDF0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DNImagePicker.strings"; sourceTree = "<group>"; };
+		3FE35F4A1C536903004EFDF0 /* ZJALAssetUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJALAssetUtils.h; sourceTree = "<group>"; };
+		3FE35F4B1C536903004EFDF0 /* ZJALAssetUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJALAssetUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3FE35F041C5367D9004EFDF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3FE35EFE1C5367D9004EFDF0 = {
+			isa = PBXGroup;
+			children = (
+				3FE35F091C5367D9004EFDF0 /* PhotoSelect_Swift */,
+				3FE35F081C5367D9004EFDF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3FE35F081C5367D9004EFDF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FE35F071C5367D9004EFDF0 /* PhotoSelect_Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FE35F091C5367D9004EFDF0 /* PhotoSelect_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				3FE35F1C1C536903004EFDF0 /* Bridge-Header.h */,
+				3FE35F1D1C536903004EFDF0 /* Lib */,
+				3FE35F0A1C5367D9004EFDF0 /* AppDelegate.swift */,
+				3FE35F0C1C5367D9004EFDF0 /* ViewController.swift */,
+				3FE35F0E1C5367D9004EFDF0 /* Main.storyboard */,
+				3FE35F111C5367DA004EFDF0 /* Assets.xcassets */,
+				3FE35F131C5367DA004EFDF0 /* LaunchScreen.storyboard */,
+				3FE35F161C5367DA004EFDF0 /* Info.plist */,
+			);
+			path = PhotoSelect_Swift;
+			sourceTree = "<group>";
+		};
+		3FE35F1D1C536903004EFDF0 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				3FE35F1E1C536903004EFDF0 /* DNImagePicker */,
+				3FE35F491C536903004EFDF0 /* ZJALAssetUtils */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		3FE35F1E1C536903004EFDF0 /* DNImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				3FE35F1F1C536903004EFDF0 /* DNAlbumTableViewController.h */,
+				3FE35F201C536903004EFDF0 /* DNAlbumTableViewController.m */,
+				3FE35F211C536903004EFDF0 /* DNAsset.h */,
+				3FE35F221C536903004EFDF0 /* DNAsset.m */,
+				3FE35F231C536903004EFDF0 /* DNImageFlowViewController.h */,
+				3FE35F241C536903004EFDF0 /* DNImageFlowViewController.m */,
+				3FE35F251C536903004EFDF0 /* DNImagePickerController.h */,
+				3FE35F261C536903004EFDF0 /* DNImagePickerController.m */,
+				3FE35F271C536903004EFDF0 /* DNImagePickerController.strings */,
+				3FE35F281C536903004EFDF0 /* DNPhotoBrowser.h */,
+				3FE35F291C536903004EFDF0 /* DNPhotoBrowser.m */,
+				3FE35F2A1C536903004EFDF0 /* DNImagePicker.strings */,
+				3FE35F2C1C536903004EFDF0 /* Extensions */,
+				3FE35F351C536903004EFDF0 /* imageResources.xcassets */,
+				3FE35F361C536903004EFDF0 /* ImagesPicker.xcassets */,
+				3FE35F371C536903004EFDF0 /* Views */,
+			);
+			path = DNImagePicker;
+			sourceTree = "<group>";
+		};
+		3FE35F2C1C536903004EFDF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3FE35F2D1C536903004EFDF0 /* NSURL+DNIMagePickerUrlEqual.h */,
+				3FE35F2E1C536903004EFDF0 /* NSURL+DNIMagePickerUrlEqual.m */,
+				3FE35F2F1C536903004EFDF0 /* UIColor+Hex.h */,
+				3FE35F301C536903004EFDF0 /* UIColor+Hex.m */,
+				3FE35F311C536903004EFDF0 /* UIView+DNImagePicker.h */,
+				3FE35F321C536903004EFDF0 /* UIView+DNImagePicker.m */,
+				3FE35F331C536903004EFDF0 /* UIViewController+DNImagePicker.h */,
+				3FE35F341C536903004EFDF0 /* UIViewController+DNImagePicker.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3FE35F371C536903004EFDF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3FE35F381C536903004EFDF0 /* DNAssetsViewCell.h */,
+				3FE35F391C536903004EFDF0 /* DNAssetsViewCell.m */,
+				3FE35F3A1C536903004EFDF0 /* DNBadgeLabel.h */,
+				3FE35F3B1C536903004EFDF0 /* DNBadgeLabel.m */,
+				3FE35F3C1C536903004EFDF0 /* DNBrowserCell.h */,
+				3FE35F3D1C536903004EFDF0 /* DNBrowserCell.m */,
+				3FE35F3E1C536903004EFDF0 /* DNFullImageButton.h */,
+				3FE35F3F1C536903004EFDF0 /* DNFullImageButton.m */,
+				3FE35F401C536903004EFDF0 /* DNSendButton.h */,
+				3FE35F411C536903004EFDF0 /* DNSendButton.m */,
+				3FE35F421C536903004EFDF0 /* DNUnAuthorizedTipsView.h */,
+				3FE35F431C536903004EFDF0 /* DNUnAuthorizedTipsView.m */,
+				3FE35F441C536903004EFDF0 /* JKPromptView.h */,
+				3FE35F451C536903004EFDF0 /* JKPromptView.m */,
+				3FE35F461C536903004EFDF0 /* MWTapDetectingImageView.h */,
+				3FE35F471C536903004EFDF0 /* MWTapDetectingImageView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3FE35F491C536903004EFDF0 /* ZJALAssetUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3FE35F4A1C536903004EFDF0 /* ZJALAssetUtils.h */,
+				3FE35F4B1C536903004EFDF0 /* ZJALAssetUtils.m */,
+			);
+			path = ZJALAssetUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3FE35F061C5367D9004EFDF0 /* PhotoSelect_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE35F191C5367DA004EFDF0 /* Build configuration list for PBXNativeTarget "PhotoSelect_Swift" */;
+			buildPhases = (
+				3FE35F031C5367D9004EFDF0 /* Sources */,
+				3FE35F041C5367D9004EFDF0 /* Frameworks */,
+				3FE35F051C5367D9004EFDF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoSelect_Swift;
+			productName = PhotoSelect_Swift;
+			productReference = 3FE35F071C5367D9004EFDF0 /* PhotoSelect_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3FE35EFF1C5367D9004EFDF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "张剑";
+				TargetAttributes = {
+					3FE35F061C5367D9004EFDF0 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 3FE35F021C5367D9004EFDF0 /* Build configuration list for PBXProject "PhotoSelect_Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 3FE35EFE1C5367D9004EFDF0;
+			productRefGroup = 3FE35F081C5367D9004EFDF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3FE35F061C5367D9004EFDF0 /* PhotoSelect_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3FE35F051C5367D9004EFDF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE35F581C536903004EFDF0 /* ImagesPicker.xcassets in Resources */,
+				3FE35F151C5367DA004EFDF0 /* LaunchScreen.storyboard in Resources */,
+				3FE35F571C536903004EFDF0 /* imageResources.xcassets in Resources */,
+				3FE35F521C536903004EFDF0 /* DNImagePicker.strings in Resources */,
+				3FE35F121C5367DA004EFDF0 /* Assets.xcassets in Resources */,
+				3FE35F501C536903004EFDF0 /* DNImagePickerController.strings in Resources */,
+				3FE35F101C5367D9004EFDF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3FE35F031C5367D9004EFDF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE35F0D1C5367D9004EFDF0 /* ViewController.swift in Sources */,
+				3FE35F5D1C536903004EFDF0 /* DNSendButton.m in Sources */,
+				3FE35F561C536903004EFDF0 /* UIViewController+DNImagePicker.m in Sources */,
+				3FE35F5A1C536903004EFDF0 /* DNBadgeLabel.m in Sources */,
+				3FE35F601C536903004EFDF0 /* MWTapDetectingImageView.m in Sources */,
+				3FE35F611C536903004EFDF0 /* ZJALAssetUtils.m in Sources */,
+				3FE35F5E1C536903004EFDF0 /* DNUnAuthorizedTipsView.m in Sources */,
+				3FE35F511C536903004EFDF0 /* DNPhotoBrowser.m in Sources */,
+				3FE35F4F1C536903004EFDF0 /* DNImagePickerController.m in Sources */,
+				3FE35F0B1C5367D9004EFDF0 /* AppDelegate.swift in Sources */,
+				3FE35F5C1C536903004EFDF0 /* DNFullImageButton.m in Sources */,
+				3FE35F551C536903004EFDF0 /* UIView+DNImagePicker.m in Sources */,
+				3FE35F541C536903004EFDF0 /* UIColor+Hex.m in Sources */,
+				3FE35F4D1C536903004EFDF0 /* DNAsset.m in Sources */,
+				3FE35F531C536903004EFDF0 /* NSURL+DNIMagePickerUrlEqual.m in Sources */,
+				3FE35F591C536903004EFDF0 /* DNAssetsViewCell.m in Sources */,
+				3FE35F4E1C536903004EFDF0 /* DNImageFlowViewController.m in Sources */,
+				3FE35F5B1C536903004EFDF0 /* DNBrowserCell.m in Sources */,
+				3FE35F4C1C536903004EFDF0 /* DNAlbumTableViewController.m in Sources */,
+				3FE35F5F1C536903004EFDF0 /* JKPromptView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3FE35F0E1C5367D9004EFDF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE35F0F1C5367D9004EFDF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3FE35F131C5367DA004EFDF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE35F141C5367DA004EFDF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3FE35F2A1C536903004EFDF0 /* DNImagePicker.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FE35F2B1C536903004EFDF0 /* en */,
+				3FE35F481C536903004EFDF0 /* zh-Hans */,
+			);
+			name = DNImagePicker.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3FE35F171C5367DA004EFDF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3FE35F181C5367DA004EFDF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3FE35F1A1C5367DA004EFDF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoSelect_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.psvmc.PhotoSelect-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)/Bridge-Header.h";
+			};
+			name = Debug;
+		};
+		3FE35F1B1C5367DA004EFDF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoSelect_Swift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.psvmc.PhotoSelect-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SWIFT_MODULE_NAME)/Bridge-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3FE35F021C5367D9004EFDF0 /* Build configuration list for PBXProject "PhotoSelect_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE35F171C5367DA004EFDF0 /* Debug */,
+				3FE35F181C5367DA004EFDF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FE35F191C5367DA004EFDF0 /* Build configuration list for PBXNativeTarget "PhotoSelect_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE35F1A1C5367DA004EFDF0 /* Debug */,
+				3FE35F1B1C5367DA004EFDF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3FE35EFF1C5367D9004EFDF0 /* Project object */;
+}
