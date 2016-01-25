@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController,DNImagePickerControllerDelegate{
 
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var filePathLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +22,7 @@ class ViewController: UIViewController,DNImagePickerControllerDelegate{
     }
 
     @IBAction func photoSelectClick(sender: AnyObject) {
+        self.filePathLabel.text = "";
         let imagePicker = DNImagePickerController();
         imagePicker.imagePickerDelegate = self;
         imagePicker.navigationBarColor = UIColor.blackColor();
@@ -35,15 +38,33 @@ class ViewController: UIViewController,DNImagePickerControllerDelegate{
             let dnasset = obj as! DNAsset;
             urls.append(dnasset.url);
         }
+        let lib = ALAssetsLibrary();
+        lib.assetForURL(urls[0], resultBlock: {
+            asset in
+            if(asset != nil){
+                let representation =  asset.defaultRepresentation()
+                let image = UIImage(CGImage:representation.fullResolutionImage().takeUnretainedValue())
+                self.imageView.image = image;
+            }
+            }, failureBlock: {
+                error in
+                
+        })
         
         ZJALAssetUtils.imagesWithURLs(urls) { (imageURLs) -> Void in
             var myimageURLs:[NSURL] = [];
+            var filePathText = "";
             self.filePathLabel.text = "";
             for obj in imageURLs{
                 let imageURL = obj as! NSURL;
                 myimageURLs.append(imageURL);
-                self.filePathLabel.text = self.filePathLabel.text! + "文件路径: \(imageURL.debugDescription)\n\n";
+                filePathText += "文件路径: \(imageURL.debugDescription)\n\n";
             }
+            if(myimageURLs.count > 0){
+                self.imageView.image = UIImage(data: NSData(contentsOfURL: myimageURLs[0])!);
+            }
+            
+            self.filePathLabel.text = filePathText;
 
             
         }
