@@ -60,9 +60,9 @@ class ViewController: UIViewController,DNImagePickerControllerDelegate{
                 myimageURLs.append(imageURL);
                 filePathText += "文件路径: \(imageURL.debugDescription)\n\n";
             }
-            if(myimageURLs.count > 0){
-                self.imageView.image = UIImage(data: NSData(contentsOfURL: myimageURLs[0])!);
-            }
+//            if(myimageURLs.count > 0){
+//                self.imageView.image = UIImage(data: NSData(contentsOfURL: myimageURLs[0])!);
+//            }
             
             self.filePathLabel.text = filePathText;
 
