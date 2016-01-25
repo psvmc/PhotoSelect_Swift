@@ -15,6 +15,7 @@
 // caches路径
 #define KCachesPath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0]
 typedef void (^ZJ_ALAssetFileSaveBlock)(NSURL *url);
+typedef void (^ZJ_ALAssetBlock)(ALAsset *asset);
 typedef void (^ZJ_ALAssetFilesSaveBlock)(NSArray *urls);
 @interface ZJALAssetUtils : NSObject
 ///获取多张图片的路径
@@ -23,4 +24,6 @@ typedef void (^ZJ_ALAssetFilesSaveBlock)(NSArray *urls);
 + (void)imageWithURL:(NSURL *)url withBlock:(ZJ_ALAssetFileSaveBlock) block;
 ///获取单个图片的路径
 + (void)videoWithURL:(NSURL *)url withBlock:(ZJ_ALAssetFileSaveBlock) block;
+///根据url获取ALAsset
++ (void)aLAssetWithURL:(NSURL *)url withBlock:(ZJ_ALAssetBlock) block;
 @end
