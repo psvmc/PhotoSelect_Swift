@@ -60,7 +60,6 @@
         [ZJALAssetUtils fileSaveWithFilePath:videoPath withRep:rep withBlock:^(NSURL *fileUrl) {
             block(fileUrl);
         }];
-        
     }];
 }
 
