@@ -11,10 +11,12 @@ import UIKit
 class ViewController: UIViewController,DNImagePickerControllerDelegate{
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var rightImageView: UIImageView!
     @IBOutlet weak var filePathLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.contentMode = UIViewContentMode.ScaleAspectFit
+        rightImageView.contentMode = UIViewContentMode.ScaleAspectFit
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,18 +40,14 @@ class ViewController: UIViewController,DNImagePickerControllerDelegate{
             let dnasset = obj as! DNAsset;
             urls.append(dnasset.url);
         }
-        let lib = ALAssetsLibrary();
-        lib.assetForURL(urls[0], resultBlock: {
-            asset in
+
+        ZJALAssetUtils.aLAssetWithURL(urls[0]) { (asset) -> Void in
             if(asset != nil){
                 let representation =  asset.defaultRepresentation()
-                let image = UIImage(CGImage:representation.fullResolutionImage().takeUnretainedValue())
+                let image = UIImage(CGImage:representation.fullScreenImage().takeUnretainedValue())
                 self.imageView.image = image;
             }
-            }, failureBlock: {
-                error in
-                
-        })
+        }
         
         ZJALAssetUtils.imagesWithURLs(urls) { (imageURLs) -> Void in
             var myimageURLs:[NSURL] = [];
@@ -58,15 +56,13 @@ class ViewController: UIViewController,DNImagePickerControllerDelegate{
             for obj in imageURLs{
                 let imageURL = obj as! NSURL;
                 myimageURLs.append(imageURL);
-                filePathText += "文件路径: \(imageURL.debugDescription)\n\n";
+                filePathText += "文件路径: \(imageURL.path!)\n\n";
             }
-//            if(myimageURLs.count > 0){
-//                self.imageView.image = UIImage(data: NSData(contentsOfURL: myimageURLs[0])!);
-//            }
+            if(myimageURLs.count > 0){
+                self.rightImageView.image = UIImage(contentsOfFile: myimageURLs[0].path!);
+            }
             
-            self.filePathLabel.text = filePathText;
-
-            
+            self.filePathLabel.text = filePathText; 
         }
     }
     
