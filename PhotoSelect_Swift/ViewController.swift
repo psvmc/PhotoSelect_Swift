@@ -15,59 +15,59 @@ class ViewController: UIViewController,DNImagePickerControllerDelegate{
     @IBOutlet weak var filePathLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.contentMode = UIViewContentMode.ScaleAspectFit
-        rightImageView.contentMode = UIViewContentMode.ScaleAspectFit
+        imageView.contentMode = UIViewContentMode.scaleAspectFit
+        rightImageView.contentMode = UIViewContentMode.scaleAspectFit
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    @IBAction func photoSelectClick(sender: AnyObject) {
+    @IBAction func photoSelectClick(_ sender: AnyObject) {
         self.filePathLabel.text = "";
         let imagePicker = DNImagePickerController();
         imagePicker.imagePickerDelegate = self;
-        imagePicker.navigationBarColor = UIColor.blackColor();
-        self.presentViewController(imagePicker, animated: true, completion: nil);
+        imagePicker.navigationBarColor = UIColor.black;
+        self.present(imagePicker, animated: true, completion: nil);
     }
     
     //图片选择组件
-    func dnImagePickerController(imagePicker: DNImagePickerController!, sendImages imageAssets: [AnyObject]!, isFullImage fullImage: Bool) {
+    private func dnImagePickerController(_ imagePicker: DNImagePickerController!, sendImages imageAssets: [AnyObject]!, isFullImage fullImage: Bool) {
         
-        var urls:[NSURL] = [];
+        var urls:[URL] = [];
         
         for obj in imageAssets{
             let dnasset = obj as! DNAsset;
             urls.append(dnasset.url);
         }
 
-        ZJALAssetUtils.aLAssetWithURL(urls[0]) { (asset) -> Void in
+        ZJALAssetUtils.aLAsset(with: urls[0]) { (asset) -> Void in
             if(asset != nil){
-                let representation =  asset.defaultRepresentation()
-                let image = UIImage(CGImage:representation.fullScreenImage().takeUnretainedValue())
+                let representation =  asset?.defaultRepresentation()
+                let image = UIImage(cgImage:(representation?.fullScreenImage().takeUnretainedValue())!)
                 self.imageView.image = image;
             }
         }
         
-        ZJALAssetUtils.imagesWithURLs(urls) { (imageURLs) -> Void in
-            var myimageURLs:[NSURL] = [];
+        ZJALAssetUtils.images(withURLs: urls) { (imageURLs) -> Void in
+            var myimageURLs:[URL] = [];
             var filePathText = "";
             self.filePathLabel.text = "";
-            for obj in imageURLs{
-                let imageURL = obj as! NSURL;
+            for obj in imageURLs!{
+                let imageURL = obj as! URL;
                 myimageURLs.append(imageURL);
-                filePathText += "文件路径: \(imageURL.path!)\n\n";
+                filePathText += "文件路径: \(imageURL.path)\n\n";
             }
             if(myimageURLs.count > 0){
-                self.rightImageView.image = UIImage(contentsOfFile: myimageURLs[0].path!);
+                self.rightImageView.image = UIImage(contentsOfFile: myimageURLs[0].path);
             }
             
             self.filePathLabel.text = filePathText; 
         }
     }
     
-    func dnImagePickerControllerDidCancel(imagePicker: DNImagePickerController!) {
-        imagePicker.dismissViewControllerAnimated(true, completion: nil);
+    func dnImagePickerControllerDidCancel(_ imagePicker: DNImagePickerController!) {
+        imagePicker.dismiss(animated: true, completion: nil);
     }
 
 }
